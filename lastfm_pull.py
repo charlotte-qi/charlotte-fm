@@ -2,8 +2,8 @@ import requests
 import pandas as pd
 
 import os
-API_KEY = 'a7ee70b80f1f834c0d48fed0684f3177'
-USERNAME = 'cqi_04'
+API_KEY = os.environ["LASTFM_API_KEY"]
+USERNAME = os.environ["LASTFM_USERNAME"]
 
 def get_recent_tracks(limit=100):
     url = 'http://ws.audioscrobbler.com/2.0/'
