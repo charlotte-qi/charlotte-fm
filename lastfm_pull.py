@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 
+import os
 API_KEY = 'a7ee70b80f1f834c0d48fed0684f3177'
 USERNAME = 'cqi_04'
 
