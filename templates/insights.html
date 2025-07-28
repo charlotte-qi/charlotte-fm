@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Charlotte FM</title>
+    <title>Listening Insights</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -24,12 +24,21 @@
         .data th {
             background-color: #eee;
         }
+        a {
+            display: inline-block;
+            margin-top: : 20px
+            color: #336;
+            text-decoration: none;
+            fold-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>Top 5 Artists (Recent Last.fm Plays)</h1>
-    {{ table|safe }}
-
-    <a href="insights">View Genre Insights</a>
+    <h1>Top 5 Genres (Recent Last.fm Plays)</h1>
+    {{ genre_table|safe }}
+    <a href="/"> Back to Top Artists</a>
 </body>
 </html>

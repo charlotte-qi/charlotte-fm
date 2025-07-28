@@ -1,5 +1,7 @@
 import requests
 import pandas as pd
+from dotenv import load_dotenv
+load_dotenv()
 
 import os
 API_KEY = os.environ["LASTFM_API_KEY"]
